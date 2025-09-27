@@ -1,3 +1,7 @@
-input.onGesture(Gesture.Shake, function () {
-    basic.showNumber(randint(1, 6))
+input.onButtonPressed(Button.A, function () {
+    RingbitCar.forward()
 })
+input.onButtonPressed(Button.B, function () {
+    RingbitCar.back()
+})
+RingbitCar.init_wheel(AnalogPin.P1, AnalogPin.P2)
